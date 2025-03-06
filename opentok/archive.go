@@ -105,7 +105,7 @@ type ArchiveOptions struct {
 	HasAudio bool `json:"hasAudio,omitempty"`
 
 	// Whether the archive will record video (true, the default) or not (false).
-	HasVideo bool `json:"hasVideo,omitempty"`
+	HasVideo *bool `json:"hasVideo,omitempty"`
 
 	// Specify this to assign the initial layout type for the archive.
 	Layout *Layout `json:"layout,omitempty"`
